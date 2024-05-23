@@ -3,7 +3,197 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Portafolio de Cristian Pérez</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Combo&family=Open+Sans:ital,wght@0,600;0,700;1,300;1,400;1,600&display=swap"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/estilos.css" />
     </head>
-    <body></body>
+    <body>
+        <!--Crear el header-->
+        <header>
+            <div class="contenedor">
+                <nav class="menu">
+                    <a href="#">Acerca de</a>
+                    <a href="#">Trabajos</a>
+                    <a href="#">Contacto</a>
+                </nav>
+
+                <div class="contenedor-texto">
+                    <div class="texto">
+                        <h1 class="nombre">Cristian Pérez</h1>
+                        <h2 class="profesion">Full Stack</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Crear section portafolio-->
+        <section class="main">
+            <section class="acerca-de">
+                <div class="contenedor">
+                    <div class="foto">
+                        <img
+                            src="img/Cristian.jpg"
+                            width="200"
+                            alt="Cristian Perez"
+                        />
+                    </div>
+                    <div class="texto">
+                        <h3 class="titulo">Acerca de</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet
+                            <span class="bold"
+                                >consectetur adipisicing elit</span
+                            >. Expedita cupiditate eos iure eaque non quod in
+                            minima aperiam
+                            <span class="bold">consequuntur eius</span>. Quo,
+                            cupiditate eius quisquam. Dolore dolorum sed
+                            nesciunt ipsam magnam.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trabajos">
+                <div class="contenedor">
+                    <h3 class="titulo">Trabajos</h3>
+
+                    <div class="contenedor-trabajos">
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/1.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/2.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/3.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/4.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/5.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/6.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--Crear el footer-->
+        <footer>
+            <div class="contenedor">
+                <section class="contacto">
+                    <h3 class="titulo">Contacto</h3>
+                    <form action="" class="formulario">
+                        <input
+                            type="text"
+                            placeholder="Nombre"
+                            name="nombre"
+                            required
+                        />
+                        <input
+                            type="email"
+                            placeholder="Correo"
+                            name="correo"
+                            required
+                        />
+                        <textarea
+                            name="mensaje"
+                            placeholder="Mensaje"
+                        ></textarea>
+                        <input class="boton" type="submit" value="Enviar" />
+                    </form>
+                </section>
+            </div>
+
+            <section class="redes-sociales">
+                <div class="contenedor">
+                    <a href="#" class="twitter"
+                        ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="#" class="facebook"
+                        ><i class="fa fa-facebook"></i
+                    ></a>
+                    <a href="#" class="youtube"
+                        ><i class="fa fa-youtube-play"></i
+                    ></a>
+                    <a
+                        href="https://github.com/CristianPerezDomper"
+                        target="_blank"
+                        class="github"
+                        ><i class="fa fa-github"></i
+                    ></a>
+                    <a href="#" class="instagram"
+                        ><i class="fa fa-instagram"></i
+                    ></a>
+                </div>
+            </section>
+        </footer>
+    </body>
 </html>

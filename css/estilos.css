@@ -121,16 +121,23 @@ header .contenedor-texto .texto .profesion {
     text-decoration: underline;
 }
 
-.main .trabajos {
+.main .Front-end {
     background: #f2f2f2;
     padding: 60px 0;
 }
 
-.main .trabajos .contenedor {
+.main .Back-end {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.main .Front-end .contenedor,
+.main .Back-end .contenedor {
     overflow: hidden;
 }
 
-.main .trabajos .titulo {
+.main .Front-end .titulo,
+.main .Back-end .titulo {
     font-size: 34px;
     line-height: 34px;
     margin-bottom: 60px;
@@ -139,105 +146,65 @@ header .contenedor-texto .texto .profesion {
     text-align: center;
 }
 
-.main .trabajos .contenedor-trabajos {
+.main .Front-end .contenedor-trabajos,
+.main .Back-end .contenedor-trabajos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo {
+.main .Front-end .contenedor-trabajos .trabajo,
+.main .Back-end .contenedor-trabajos .trabajo {
     width: 30%;
     margin-bottom: 40px;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .thumb {
+.main .Front-end .contenedor-trabajos .trabajo .thumb,
+.main .Back-end .contenedor-trabajos .trabajo .thumb {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .thumb img {
+.main .Front-end .contenedor-trabajos .trabajo .thumb img,
+.main .Back-end .contenedor-trabajos .trabajo .thumb img {
     width: 100%;
     vertical-align: top;
     border-radius: 3px;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .descripcion {
+.main .Front-end .contenedor-trabajos .trabajo .descripcion,
+.main .Back-end .contenedor-trabajos .trabajo .descripcion {
     text-align: center;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+.main .Front-end .contenedor-trabajos .trabajo .descripcion .nombre,
+.main .Back-end .contenedor-trabajos .trabajo .descripcion .nombre {
     font-weight: 700;
     color: #3895ea;
     margin-bottom: 10px;
 }
 
-.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+.main .Front-end .contenedor-trabajos .trabajo .descripcion a.link {
+    text-decoration: none;
+}
+
+.main .Front-end .contenedor-trabajos .trabajo .descripcion .categoria,
+.main .Back-end .contenedor-trabajos .trabajo .descripcion .categoria {
     font-size: 14px;
     color: #636363;
 }
 
 /* ----- ----- FOOTER ----- ----- */
 
-footer .contacto {
-    padding: 60px 0;
-}
-
-footer .contacto .titulo {
+footer .redes-sociales .titulo {
     font-size: 34px;
     line-height: 34px;
     margin-bottom: 60px;
     font-weight: 300;
-    color: #3895ea;
+    color: #fff;
     text-align: center;
 }
-
-footer .contacto .formulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer .contacto .formulario input[type='text'],
-footer .contacto .formulario input[type='email'],
-footer .contacto .formulario textarea {
-    border: 2px solid #cecece;
-    border-radius: 5px;
-    padding: 15px 20px;
-    font-size: 20px;
-    color: #a4a4a4;
-}
-
-footer .contacto .formulario input[type='text'],
-footer .contacto .formulario input[type='email'] {
-    width: 49%;
-    margin-bottom: 15px;
-}
-
-footer .contacto .formulario textarea {
-    width: 100%;
-    height: 100px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100px;
-    max-height: 300px;
-    margin-bottom: 15px;
-}
-
-footer .contacto .formulario .boton {
-    margin: auto;
-    background: #3895ea;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 15px 40px;
-    cursor: pointer;
-}
-
-footer .contacto .formulario .boton:hover {
-    background: #387bea;
-}
-
 footer .redes-sociales {
     background: #1e2b38;
     padding: 60px 0;
@@ -278,7 +245,8 @@ footer .redes-sociales .linkedin:hover {
         text-align: center;
     }
 
-    .main .trabajos .contenedor-trabajos .trabajo {
+    .main .Front-end .contenedor-trabajos .trabajo,
+    .main .Back-end .contenedor-trabajos .trabajo {
         width: 46%;
     }
 

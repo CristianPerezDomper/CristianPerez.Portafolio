@@ -17,9 +17,10 @@
         <header>
             <div class="contenedor">
                 <nav class="menu">
-                    <a href="#">Acerca de</a>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Contacto</a>
+                    <a href="#" id="btn-acerca-de">Acerca de</a>
+                    <a href="#" id="btn-front-end">Front-end</a>
+                    <a href="#" id="btn-back-end">Back-end</a>
+                    <a href="#" id="btn-contacto">Contacto</a>
                 </nav>
 
                 <div class="contenedor-texto">
@@ -34,7 +35,7 @@
         <!--Crear section portafolio-->
         <section class="main">
             <section class="acerca-de">
-                <div class="contenedor">
+                <div id="acerca-de" class="contenedor">
                     <div class="foto">
                         <img
                             src="img/Cristian.jpg"
@@ -45,22 +46,80 @@
                     <div class="texto">
                         <h3 class="titulo">Acerca de</h3>
                         <p>
-                            Lorem ipsum dolor sit amet
-                            <span class="bold"
-                                >consectetur adipisicing elit</span
-                            >. Expedita cupiditate eos iure eaque non quod in
-                            minima aperiam
-                            <span class="bold">consequuntur eius</span>. Quo,
-                            cupiditate eius quisquam. Dolore dolorum sed
-                            nesciunt ipsam magnam.
+                            Mi pasión por la tecnología me ha llevado a adquirir
+                            una base sólida de conocimientos en diversas
+                            herramientas y lenguajes, incluyendo framework .NET,
+                            C#, SQL, JavaScript, HTML, CSS y con más de 7 años
+                            de experiencia asesorando a cliente en el sector
+                            bancario, he desarrollado habilidades blandas en
+                            atención al cliente, trabajo en equipo, cumplimiento
+                            de meta y resolución de problemas utilizando los
+                            productos y servicios del banco.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section class="trabajos">
+            <section id="front-end" class="Front-end">
                 <div class="contenedor">
-                    <h3 class="titulo">Trabajos</h3>
+                    <h3 class="titulo">Front-End</h3>
+
+                    <div class="contenedor-trabajos">
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <a
+                                    href="https://cristianperezdomper.github.io/WebsiteRestaurant/"
+                                    target="_blank"
+                                    ><img
+                                        src="img/trabajos/Restaurant.jpg"
+                                        alt="Website Restaurante"
+                                /></a>
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <a
+                                    class="link"
+                                    href="https://github.com/CristianPerezDomper/WebsiteRestaurant"
+                                    target="_blank"
+                                    ><p class="categoria">
+                                        VAMOS AL REPOSITORIO
+                                    </p></a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/2.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+
+                        <div class="trabajo">
+                            <div class="thumb">
+                                <img
+                                    src="img/trabajos/3.jpg"
+                                    alt="Website Restaurante"
+                                />
+                            </div>
+                            <div class="descripcion">
+                                <p class="nombre">Website Restaurant</p>
+                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="back-end" class="Back-end">
+                <div class="contenedor">
+                    <h3 class="titulo">Back-End</h3>
 
                     <div class="contenedor-trabajos">
                         <div class="trabajo">
@@ -101,45 +160,6 @@
                                 <p class="categoria">HTML-CSS-JAVASCRIPT</p>
                             </div>
                         </div>
-
-                        <div class="trabajo">
-                            <div class="thumb">
-                                <img
-                                    src="img/trabajos/4.jpg"
-                                    alt="Website Restaurante"
-                                />
-                            </div>
-                            <div class="descripcion">
-                                <p class="nombre">Website Restaurant</p>
-                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
-                            </div>
-                        </div>
-
-                        <div class="trabajo">
-                            <div class="thumb">
-                                <img
-                                    src="img/trabajos/5.jpg"
-                                    alt="Website Restaurante"
-                                />
-                            </div>
-                            <div class="descripcion">
-                                <p class="nombre">Website Restaurant</p>
-                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
-                            </div>
-                        </div>
-
-                        <div class="trabajo">
-                            <div class="thumb">
-                                <img
-                                    src="img/trabajos/6.jpg"
-                                    alt="Website Restaurante"
-                                />
-                            </div>
-                            <div class="descripcion">
-                                <p class="nombre">Website Restaurant</p>
-                                <p class="categoria">HTML-CSS-JAVASCRIPT</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -147,32 +167,9 @@
 
         <!--Crear el footer-->
         <footer>
-            <div class="contenedor">
-                <section class="contacto">
-                    <h3 class="titulo">Contacto</h3>
-                    <form action="" class="formulario">
-                        <input
-                            type="text"
-                            placeholder="Nombre"
-                            name="nombre"
-                            required
-                        />
-                        <input
-                            type="email"
-                            placeholder="Correo"
-                            name="correo"
-                            required
-                        />
-                        <textarea
-                            name="mensaje"
-                            placeholder="Mensaje"
-                        ></textarea>
-                        <input class="boton" type="submit" value="Enviar" />
-                    </form>
-                </section>
-            </div>
+            <section id="contacto" class="redes-sociales">
+                <h3 class="titulo">Contacto</h3>
 
-            <section class="redes-sociales">
                 <div class="contenedor">
                     <a
                         href="https://github.com/CristianPerezDomper"
@@ -195,5 +192,9 @@
                 </div>
             </section>
         </footer>
+
+        <!--Añadimos Jq y Efectos con JavaScript-->
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/efectos.js"></script>
     </body>
 </html>
